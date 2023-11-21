@@ -17,13 +17,9 @@
 
 [](Art.md)
 
-## Doc
 
-[](Doc.md)
 
-## Media
 
-[](Media.md)
 
 ## Man month
 
