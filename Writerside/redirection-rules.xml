@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="2686f7c1">
+        <description>Created after removal of "Doc" from Help Instance</description>
+        <accepts>Doc.html</accepts>
+    </rule>
+    <rule id="5bdec0ef">
+        <description>Created after removal of "Media" from Help Instance</description>
+        <accepts>Media.html</accepts>
+    </rule>
+</rules>

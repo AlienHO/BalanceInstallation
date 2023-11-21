@@ -1,3 +1,0 @@
-# Doc
-
-Start typing here...

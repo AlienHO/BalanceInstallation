@@ -1,3 +1,0 @@
-# Media
-
-Start typing here...
