@@ -14,9 +14,10 @@
 | 9     | Art       | 汪姿攸     |
 | 10    | Art       | 王思亲     |
 
-## Date
 
 [Gantt chart](https://giant-handspring-6db.notion.site/Gantt-chart-062f8b56c829461faba62e609ba37662?pvs=4)
 
-![](ProjectSchedule.png)
-![](TasksSchedule.png)
+
+![ProjectSchedule](ProjectSchedule.png)
+
+![TasksSchedule](TasksSchedule.png)
