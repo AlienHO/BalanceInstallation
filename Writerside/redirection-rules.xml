@@ -14,4 +14,8 @@
         <description>Created after removal of "Media" from Help Instance</description>
         <accepts>Media.html</accepts>
     </rule>
+    <rule id="30515c69">
+        <description><![CDATA[Created after removal of "<Date.md>" from BalanceInstallation]]></description>
+        <accepts>Date.html</accepts>
+    </rule>
 </rules>
