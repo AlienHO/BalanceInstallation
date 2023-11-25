@@ -2,6 +2,8 @@
 
 [日程任务安排表 Gantt chart](https://giant-handspring-6db.notion.site/Gantt-chart-062f8b56c829461faba62e609ba37662?pvs=4)
 
+[小组项目资金管理 Team project fund management](https://giant-handspring-6db.notion.site/563879cbc317412ebb0f73e2b8f99631?v=d26c609acaaa44a687e4eb1b9f0c8010&pvs=4)
+
 ### Samples
 - [PID-基于板球平衡系统]( https://www.bilibili.com/video/BV1xL4y147ea/?share_source=copy_web&vd_source=a75fe652314fccaa8d85cc73bfb23ed0)
 - [使用閉迴路步進馬達的 3DOF 板上球](https://www.instructables.com/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/)
@@ -50,4 +52,5 @@
 | **结构Structure** | [Structure](Hardware.md)            |
 | **美术Art**       | [Art](Art.md)                       |
 | **安排Schedule**  | [Schedule](Schedule.md)             |
+| **资金管理FinancialManagement** |  [Financial Management](Financial.md)                  |
 
