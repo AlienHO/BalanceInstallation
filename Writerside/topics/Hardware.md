@@ -1,4 +1,9 @@
 # Structure
+![](Structure-11272023.jpg)
+
+### Samples
+[3DOF Ball on Plate Using Closed Loop Stepper Motors](https://www.instructables.com/3DOF-Ball-on-Plate-Using-Closed-Loop-Stepper-Motor/)
+
 ### TODO
 
 1. **平衡板设计与制作**

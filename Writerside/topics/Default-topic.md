@@ -46,11 +46,11 @@
 
 ## Part
 
-| Part            | Detail                              |
-|-----------------|-------------------------------------|
-| **开发Develop**   | [Dev](Dev.md)                       |
-| **结构Structure** | [Structure](Hardware.md)            |
-| **美术Art**       | [Art](Art.md)                       |
-| **安排Schedule**  | [Schedule](Schedule.md)             |
-| **资金管理FinancialManagement** |  [Financial Management](Financial.md)                  |
+| Part                        | Detail                               |
+|-----------------------------|--------------------------------------|
+| **开发Develop**               | [Dev](Dev.md)                        |
+| **结构Structure**             | [Structure](Hardware.md)             |
+| **美术Art**                   | [Art](Art.md)                        |
+| **安排Schedule**              | [Schedule](Schedule.md)              |
+| **资金管理FinancialManagement** | [Financial Management](Financial.md) |
 

@@ -1,5 +1,9 @@
 # Dev
 
+[Visual-Identification.py 程序说明文档](Visual-Identification.md)
+
+
+![](dev-1262023.jpg)
 ### Samples
 [【学会PID-基于板球平衡系统-初中基础就能听懂的简单讲】]( https://www.bilibili.com/video/BV1xL4y147ea/?share_source=copy_web&vd_source=a75fe652314fccaa8d85cc73bfb23ed0)
 
@@ -23,3 +27,5 @@
 4. **测试与调试**
    - 完整的系统集成测试
    - 性能优化和错误修复
+
+   
