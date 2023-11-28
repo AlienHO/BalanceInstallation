@@ -1,8 +1,12 @@
 import cv2
 import numpy as np
+from pythonosc import udp_client
 
 # 打开摄像头
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
+
+# OSC客户端设置
+osc_client = udp_client.SimpleUDPClient("127.0.0.1", 5005)  # OSC接收器的IP和端口
 
 # 检查摄像头是否成功打开
 if not cap.isOpened():
@@ -21,12 +25,12 @@ while True:
     # 将图像转换为HSV颜色空间
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # 定义白色的颜色范围
-    lower_white = np.array([0, 0, 200])
-    upper_white = np.array([180, 30, 255])
+    # 定义黑色的颜色范围
+    lower_black = np.array([0, 0, 0])
+    upper_black = np.array([180, 100, 100])
 
     # 创建掩码
-    mask = cv2.inRange(hsv, lower_white, upper_white)
+    mask = cv2.inRange(hsv, lower_black, upper_black)
 
     # 查找轮廓
     contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
@@ -52,6 +56,10 @@ while True:
 
             # 在控制台输出小球的坐标
             print(f"球的坐标：({center_x}, {center_y})")
+
+            # 通过OSC发送小球的坐标
+            osc_client.send_message("/ball/position", [center_x, center_y])
+
     # 显示图像
     cv2.imshow("Frame", frame)
 
