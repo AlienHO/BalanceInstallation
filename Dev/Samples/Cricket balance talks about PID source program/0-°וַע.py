@@ -1,5 +1,3 @@
-#作者：B站‘程欢欢的智能控制集’
-#QQ群：245234784
 #一、声明
 import sensor, image, time,car,math
 from time import sleep as 等待

@@ -10,6 +10,7 @@
     <toc-element topic="Dev.md">
         <toc-element topic="Visual-Identification.md"/>
         <toc-element topic="TrajectoryGeneration.md"/>
+        <toc-element topic="TripleServoController.md"/>
         <toc-element topic="LeapMotion-Configration.md"/>
     </toc-element>
     <toc-element topic="Hardware.md"/>
