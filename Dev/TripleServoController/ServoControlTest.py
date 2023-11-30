@@ -1,42 +1,31 @@
-#以下是一个测试程序，用于控制三个伺服电机在30度和90度之间连续来回旋转，每间隔一秒发送一次串口信号。
-
+#以下是一个测试程序，控制上面arduino程序的这三个舵机。该程序首先将舵机默认设置为0度，然后让它们同时旋转到60度，接着旋转到160度，然后回到0度，并重复这个过程5次。
 import serial
 import time
-import keyboard  # 引入keyboard库
 
-# 创建与Arduino的串口连接（请根据你的Arduino板子调整端口和波特率）
-arduino = serial.Serial(port='COM3', baudrate=9600, timeout=.1)
+# 设置串口连接
+ser = serial.Serial('/dev/tty.usbmodem1101', 9600)
+time.sleep(0.5)  # 等待串口初始化
 
-def send_servo_positions(pos1, pos2, pos3):
-    """
-    向Arduino发送三个伺服电机的位置。
-    """
+def set_servos(pos1, pos2, pos3):
+    """ 向Arduino发送命令以设置舵机位置 """
     command = f"{pos1},{pos2},{pos3}\n"
-    arduino.write(bytes(command, 'utf-8'))
-    time.sleep(0.05) # 稍微等待以确保Arduino接收到完整的命令
+    ser.write(command.encode())
 
-def main():
-    try:
-        print("Press 'Q' to exit")
-        while True:
-            if keyboard.is_pressed('q'):  # 检查是否按下了'Q'键
-                print("Exiting program")
-                break
+# 初始化舵机位置为0度
+set_servos(0, 0, 0)
+time.sleep(0.5)
 
-            # 发送命令让伺服电机转到30度
-            send_servo_positions(30, 30, 30)
-            time.sleep(1)
+for _ in range(5):
+    # 设置舵机到60度
+    set_servos(60, 60, 60)
+    time.sleep(0.5)
 
-            # 发送命令让伺服电机转到90度
-            send_servo_positions(90, 90, 90)
-            time.sleep(1)
+    # 设置舵机到160度
+    set_servos(90, 90, 90)
+    time.sleep(0.5)
 
-    except KeyboardInterrupt:
-        pass
-    finally:
-        # 发送命令让伺服电机回到初始位置，并关闭串口
-        send_servo_positions(0, 0, 0)
-        arduino.close()
+    # 重置舵机到0度
+    set_servos(0, 0, 0)
+    time.sleep(0.5)
 
-if __name__ == "__main__":
-    main()
+ser.close()  # 关闭串口连接

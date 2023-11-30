@@ -1,5 +1,5 @@
 # TripleServoController.ino 程序说明文档
-
+![](schematic.png)
 ## Arduino程序: TripleServoController
 
 ### 功能描述
@@ -27,27 +27,30 @@
 
 ---
 
-## Python测试程序: ServoControlTest.py  {collapsible="true"}
+## 测试程序: ServoControlTest.py  {collapsible="true"}
 
 ### 功能描述
-`ServoControlTest.py` 是一个Python脚本，用于自动控制`TripleServoController.ino` Arduino程序中的三个伺服电机。该脚本每秒发送一次指令，使三个伺服电机在30度和90度之间来回旋转。
+`ServoControlTest.py` 是一个Python脚本，用于自动控制`TripleServoController.ino` Arduino程序中的三个伺服电机。使三个伺服电机在30度和90度之间来回旋转。
 
 ### 软件要求
 - Python 3.x
 - `pyserial` 库
 - `keyboard` 库
 
-### 使用说明
-1. 确保Arduino板已连接到计算机，并且`TripleServoController`程序已经上传并运行。
-2. 运行`ServoControlTest`脚本。
-3. 观察伺服电机在30度和90度之间来回旋转。
-4. 按下'Q'键以退出程序。
+### 使用方法
+- 确保已经安装Python和pyserial库。
+- 将Arduino设备通过USB连接到计算机。
+- 确认Arduino设备的串口名称（在本脚本中为/dev/tty.usbmodem1101）。
+- 运行脚本。脚本会自动通过串口与Arduino设备通信，控制连接的舵机。
 
 ### 程序概述
-1. 初始化与Arduino的串口通信。
-2. 循环发送控制信号，使伺服电机在两个预设位置之间切换。
-3. 监听键盘输入，当检测到'Q'键被按下时，退出程序。
+- 将所有三个舵机初始化到0度位置。
+- 循环五次，每次循环中：
+- 将所有舵机旋转到60度。
+- 然后旋转到90度。
+- 最后将舵机回旋到0度初始位置。
 
 ### 注意事项
 - 确保修改Python脚本中的串口名称，以匹配你的系统和Arduino板的连接。
-- 在某些操作系统上，可能需要管理员权限来运行Python脚本，以便使用键盘监听功能。
+- 确保Arduino设备已正确编程，能够解析并响应发送到其串口的位置指令。
+- 如果舵机或Arduino设备在使用过程中出现问题，可能需要检查电源供应或硬件连接。

@@ -26,8 +26,8 @@ while True:
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # 定义黑色的颜色范围
-    lower_black = np.array([0, 0, 0])
-    upper_black = np.array([180, 100, 100])
+    lower_black = np.array([0, 0, 200])
+    upper_black = np.array([180, 30, 255])
 
     # 创建掩码
     mask = cv2.inRange(hsv, lower_black, upper_black)

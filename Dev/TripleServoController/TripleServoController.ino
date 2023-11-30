@@ -11,6 +11,10 @@ void setup() {
   servo2.attach(6); // 将第二个伺服电机连接到6号引脚
   servo3.attach(7); // 将第三个伺服电机连接到7号引脚
   
+  servo1.write(0); // 设置第一个伺服电机的初始位置为0度
+  servo2.write(0); // 设置第二个伺服电机的初始位置为0度
+  servo3.write(0); // 设置第三个伺服电机的初始位置为0度
+
   Serial.begin(9600); // 启动串口通讯，传输波特率9600
   Serial.println("Please input three numbers separated by commas.");
 }
