@@ -1,4 +1,7 @@
 # TripleServoController.ino 程序说明文档
+
+- [ErrorReport-大型舵机串口控制异常及电源问题](ErrorReport.md)
+
 ![](schematic.png)
 ## Arduino程序: TripleServoController
 

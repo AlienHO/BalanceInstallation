@@ -3,7 +3,7 @@ import serial
 import time
 
 # 设置串口连接
-ser = serial.Serial('/dev/tty.usbmodem1101', 9600)
+ser = serial.Serial('/dev/tty.usbserial-110', 9600)
 time.sleep(0.5)  # 等待串口初始化
 
 def set_servos(pos1, pos2, pos3):
@@ -13,16 +13,16 @@ def set_servos(pos1, pos2, pos3):
 
 # 初始化舵机位置为0度
 set_servos(0, 0, 0)
-time.sleep(0.5)
+time.sleep(0.2)
 
 for _ in range(5):
     # 设置舵机到60度
     set_servos(60, 60, 60)
-    time.sleep(0.5)
+    time.sleep(0.2)
 
     # 设置舵机到160度
     set_servos(90, 90, 90)
-    time.sleep(0.5)
+    time.sleep(0.2)
 
     # 重置舵机到0度
     set_servos(0, 0, 0)
