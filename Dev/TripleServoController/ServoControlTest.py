@@ -3,7 +3,7 @@ import serial
 import time
 
 # 设置串口连接
-ser = serial.Serial('/dev/tty.usbserial-110', 9600)
+ser = serial.Serial('/dev/tty.usbmodem2101', 9600)
 time.sleep(0.5)  # 等待串口初始化
 
 def set_servos(pos1, pos2, pos3):
