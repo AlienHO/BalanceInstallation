@@ -1,5 +1,7 @@
 # leap-motion-python包需要的Python版本是2.7.x、3.6.x、>=3.7,<3.8.0a0或>=3.8,<3.9.0a0
 # conda install -c speleo3 leap-motion-python
+# LeapMotion配置和测试指南:https://alienho.github.io/BalanceInstallation/leapmotion-configration.html
+
 
 
 import Leap, sys

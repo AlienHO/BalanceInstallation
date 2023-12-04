@@ -1,4 +1,4 @@
-# LeapMotion配置和测试指南
+# LeapMotion配置和测试
 
 ## 概述
 
@@ -63,6 +63,16 @@
    ```bash
    python testLEAP.py
    ```
+
+## 正常运行的预期结果
+
+成功运行 `testLEAP.py` 脚本后，您应看到：
+
+1. **控制台输出**：显示Leap Motion状态和手部数据。
+2. **手势识别**：实时反馈手势或动作。
+3. **无错误消息**：脚本顺利运行，无异常或错误。
+
+<video src="LEAPtest.mp4" preview-src="LEAPtest.jpg"/>
 
 ## 故障排除
 
