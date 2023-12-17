@@ -25,12 +25,19 @@ while True:
     # 将图像转换为HSV颜色空间
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # 定义黑色的颜色范围
-    lower_black = np.array([0, 0, 200])
-    upper_black = np.array([180, 30, 255])
+    # 定义两个正红色的颜色范围
+    # 第一个范围捕捉低色调的红色
+    lower_red1 = np.array([0, 100, 100])
+    upper_red1 = np.array([10, 255, 255])
 
-    # 创建掩码
-    mask = cv2.inRange(hsv, lower_black, upper_black)
+    # 第二个范围捕捉高色调的红色
+    lower_red2 = np.array([160, 100, 100])
+    upper_red2 = np.array([180, 255, 255])
+
+    # 创建两个掩码并合并
+    mask1 = cv2.inRange(hsv, lower_red1, upper_red1)
+    mask2 = cv2.inRange(hsv, lower_red2, upper_red2)
+    mask = cv2.bitwise_or(mask1, mask2)
 
     # 查找轮廓
     contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
