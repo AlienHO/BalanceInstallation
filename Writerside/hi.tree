@@ -7,6 +7,7 @@
                  start-page="Default-topic.md">
 
     <toc-element topic="Default-topic.md"/>
+    <toc-element topic="DOC.md"/>
     <toc-element topic="Dev.md">
         <toc-element topic="Issues.md"/>
         <toc-element topic="Visual-Identification.md"/>
