@@ -18,4 +18,16 @@
         <description><![CDATA[Created after removal of "<Date.md>" from BalanceInstallation]]></description>
         <accepts>Date.html</accepts>
     </rule>
+    <rule id="6d7ab114">
+        <description>Created after removal of "Issues" from BalanceInstallation</description>
+        <accepts>Issues.html</accepts>
+    </rule>
+    <rule id="55affcb2">
+        <description>Created after removal of "Financial Management" from BalanceInstallation</description>
+        <accepts>Financial.html</accepts>
+    </rule>
+    <rule id="ea36692">
+        <description>Created after removal of "平衡立方 BALANCE*3" from BalanceInstallation</description>
+        <accepts>DOC.html</accepts>
+    </rule>
 </rules>

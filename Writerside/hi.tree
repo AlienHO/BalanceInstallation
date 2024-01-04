@@ -7,19 +7,27 @@
                  start-page="Default-topic.md">
 
     <toc-element topic="Default-topic.md"/>
-    <toc-element topic="DOC.md"/>
-    <toc-element topic="Dev.md">
-        <toc-element topic="Issues.md"/>
-        <toc-element topic="Visual-Identification.md"/>
-        <toc-element topic="TrajectoryGeneration.md"/>
-        <toc-element topic="TripleServoController.md">
-            <toc-element topic="ErrorReport.md"/>
-        </toc-element>
-        <toc-element topic="LeapMotion-Configration.md"/>
-        <toc-element topic="PID.md"/>
-    </toc-element>
-    <toc-element topic="Hardware.md"/>
-    <toc-element topic="Art.md"/>
+    <toc-element topic="方案概念.md"/>
+    <toc-element topic="交互流程图.md"/>
+    <toc-element topic="项目核心组成部分.md"/>
     <toc-element topic="Schedule.md"/>
-    <toc-element topic="Financial.md"/>
+    <toc-element topic="ProjectTasksAndErrorLog.md">
+        <toc-element topic="Dev.md">
+            <toc-element topic="Visual-Identification.md"/>
+            <toc-element topic="PID.md"/>
+            <toc-element topic="TripleServoController.md">
+                <toc-element topic="ErrorReport.md"/>
+            </toc-element>
+            <toc-element topic="Leap-Motion手势控制数据处理.md">
+                <toc-element topic="LeapMotion-Configration.md"/>
+            </toc-element>
+            <toc-element topic="TrajectoryGeneration.md"/>
+            <toc-element topic="系统集成测试与调试.md"/>
+        </toc-element>
+        <toc-element topic="Hardware.md"/>
+        <toc-element topic="Art.md"/>
+    </toc-element>
+    <toc-element topic="结论领悟.md"/>
+    <toc-element topic="参考资料.md"/>
+    <toc-element topic="附录.md"/>
 </instance-profile>

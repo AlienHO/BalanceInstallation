@@ -1,4 +1,6 @@
-# Schedule
+# 组员分工与时间表
+
+### 组员分工表
 
 | index | role      | assign  |
 |-------|-----------|---------|
@@ -14,11 +16,18 @@
 | 9     | Art       | 汪姿攸     |
 | 10    | Art       | 王思亲     |
 
+![](A.png)
+
+
+### 项目时间表 Project Schedule
 
 [Gantt chart](https://giant-handspring-6db.notion.site/Gantt-chart-062f8b56c829461faba62e609ba37662?pvs=4)
 
+#### 安排总表
 
 ![ProjectSchedule](ProjectSchedule.png)
+
+#### 详细安排表
 
 ![TasksSchedule](TasksSchedule.png)
 
