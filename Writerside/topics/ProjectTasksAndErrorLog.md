@@ -4,12 +4,13 @@
 
 | TaskID | Description                                   | Status  | Errors                                                                                                                                                         |
 |--------|-----------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0      | [视觉识别功能配置与测试](Visual-Identification.md)       | Done    | [摄像头无法打开(Done)](Visual-Identification.md)<br/>[无法识别物体或发送数据(Done)](Visual-Identification.md)                                                                    |
-| 1      | [实现PID控制算法](PID.md)                           | Done    | [硬件连接问题(Done)](PID.md)<br/>[PID参数不当(Done)](PID.md)                                                                                                             |
-| 2      | [电机转动功能配置和测试](TripleServoController.md)       | Done    | [舵机供电时没有共地无法正常运行(Done)](ErrorReport.md)<br/>[串口通信问题(Done)](TripleServoController.md)<br/>[电机响应问题(Done)](TripleServoController.md)                              |
+| 0      | [视觉识别功能配置与测试](Visual-Identification.md)       | Done    | [摄像头无法打开(Done)](Visual-Identification.md#A)<br/>[无法识别物体或发送数据(Done)](Visual-Identification.md#A)                                                                |
+| 1      | [实现PID控制算法](PID.md)                           | Done    | [硬件连接问题(Done)](PID.md#A)<br/>[PID参数不当(Done)](PID.md#A)                                                                                                         |
+| 2      | [电机转动功能配置和测试](TripleServoController.md)       | Done    | [舵机供电时没有共地无法正常运行(Done)](ErrorReport.md)<br/>[串口通信问题(Done)](TripleServoController.md#A)<br/>[电机响应问题(Done)](TripleServoController.md#A)                          |
 | 3      | [Leap Motion手势控制数据处理](Leap-Motion手势控制数据处理.md) | Done    | [LeapMotion配置和测试(Done)](LeapMotion-Configration.md)<br/>[Leap Motion控制器未识别(Done)](LeapMotion-Configration.md)<br/>[SDK版本不兼容(Done)](LeapMotion-Configration.md) |
-| 4      | [轨迹记录与输出程序开发](TrajectoryGeneration.md)        | Done    | [数据接收问题(Done)](TrajectoryGeneration.md)<br/>[视觉呈现问题(Done)](TrajectoryGeneration.md)                                                                            |
-| 5      | [系统集成测试与调试](系统集成测试与调试.md)                     | Done    | [串口通信故障(Done)](TripleServoController.md)<br/>[PID参数调整(Done)](PID.md)<br/>[Leap Motion数据异常(Done)](Leap-Motion手势控制数据处理.md)                                       |
+| 4      | [轨迹记录与输出程序开发](TrajectoryGeneration.md)        | Done    | [数据接收问题(Done)](TrajectoryGeneration.md#A)<br/>[视觉呈现问题(Done)](TrajectoryGeneration.md#A)                                                                        |
+| 5      | [系统集成测试与调试](系统集成测试与调试.md)                     | Done    | [串口通信故障(Done)](TripleServoController.md#A)<br/>[PID参数调整(Done)](PID.md#A)<br/>[Leap Motion数据异常(Done)](Leap-Motion手势控制数据处理.md#A)                                 |
+
 
 ### 机械结构 Structure
 

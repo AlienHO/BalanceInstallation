@@ -74,6 +74,8 @@
 
 <video src="LEAPtest.mp4" preview-src="LEAPtest.jpg"/>
 
+{: id="A"}
+
 ## 故障排除
 
 - 确保Leap Motion控制器被正确识别。

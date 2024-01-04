@@ -29,8 +29,13 @@
 <video src="Visual-Identification1.mp4" preview-src="Visual-Identification2.jpg"/>
 
 
-## 故障排除
+
+## 故障排除 
+
 - **摄像头无法打开**：检查摄像头连接和系统识别。尝试调整 `cv2.VideoCapture` 的索引值。
 - **无法识别物体或发送数据**：核实Python环境和库的安装状况。确保摄像头能够捕获清晰图像。
 - **其他错误**：根据程序输出的错误信息进行调试和修正。
+
+  {: id="A"}
+
 

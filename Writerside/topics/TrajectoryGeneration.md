@@ -29,7 +29,10 @@
 - **视觉效果呈现**：基于实时数据生成视觉效果。
 <video src="Visual-Identification1.mp4" preview-src="Visual-Identification2.jpg"/>
 
+
 ## 故障排除
 - **数据接收问题**：检查TouchDesigner中OSC In DAT节点配置是否正确。
 - **数据延迟或丢失**：检查网络连接稳定性和发送设备配置。
 - **视觉效果问题**：核实Geo COMP、Trail SOP和Render TOP的设置以响应数据。
+
+{: id="A"}
